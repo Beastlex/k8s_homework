@@ -60,7 +60,7 @@ $ curl http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/ > 
 
 Скриншот из браузера сохраняем в screen11.png
 
-![screenshot]*(screen11.png)
+![screenshot]*(https://https://raw.githubusercontent.com/Beastlex/k8s_homework/main/task01/screen11.png)
 
 # Задание 1.2
 
