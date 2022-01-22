@@ -59,7 +59,8 @@ $ curl http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/ > 
 ```
 
 Скриншот из браузера сохраняем в screen_1_1.PNG
-![screen_1_1]*(screen_1_1.PNG | width = 480)
+
+![]*(screen_1_1.PNG | width = 480)
 
 # Задание 1.2
 
