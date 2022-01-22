@@ -58,9 +58,8 @@ $ kubectl proxy
 $ curl http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/ > output11.json
 ```
 
-Скриншот из браузера сохраняем в screen11.png
+Скриншот из браузера сохраняем в [screen11.png](https://raw.githubusercontent.com/Beastlex/k8s_homework/main/task01/screen11.png)
 
-![screenshot]*(https://raw.githubusercontent.com/Beastlex/k8s_homework/main/task01/screen11.png)
 
 # Задание 1.2
 
