@@ -52,10 +52,10 @@ $ echo -n $A | base64 -d
 $ kubectl proxy
 ```
 
-Запускаем прокси. Вывод сохраняем в файл output1_1.json
+Запускаем прокси. Вывод сохраняем в файл output11.json
 ```
 $ kubectl proxy
-$ curl http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/ > output1_1.json
+$ curl http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/ > output11.json
 ```
 
 Скриншот из браузера сохраняем в screen11.png
