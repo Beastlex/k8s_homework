@@ -204,7 +204,7 @@ metrics-server-fc6f95b99-427jr - metrics-server-fc6f95b99
 storage-provisioner -
 ```
 
-Создаем Canary Deployments. В файле canary-ingress.yaml создаем
+Создаем Canary Deployments. В файле [canary-ingress.yaml](canary-ingress.yaml) создаем
 Ingress с тем же именем ingress-web, что и Ingress, созданный
 ранее. Но в другом namespace - web-canary. Устанавливаем 
 правило, чтобы заголовок canary:always перенаправлялся сюда
