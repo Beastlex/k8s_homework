@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  firstname: Alex
+  lastname: Zverev
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: user
