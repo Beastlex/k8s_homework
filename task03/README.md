@@ -55,4 +55,24 @@ curl 192.168.59.100/web/ > out-home-web.html
 [out-home-root.html](out-home-root.html)
 [out-home-web.html](out-home-web.html)
 
+Создаем манифест [httpd.yaml](httpd.yaml) для Apache с 
+монтированием EmptyDir. Подключаемся к поду и создаем файл
+в монтированной директории 
+```console
+$ k apply -f httpd.yaml
+$ k exec -ti httpd-6f77ffd85c-t7fhg -- bash
+$ cd /usr/local/apache2/htdocs/
+$ cat '<h1>Hello</h1>' > index.html
+```
+
+Удаляем под, заходим на вновь созданный и проверяем содержимое
+директории
+```console
+$ k delete pod httpd-6f77ffd85c-t7fhg
+$ k exec -ti httpd-6f77ffd85c-7ctvf -- bash
+$ ls /usr/local/apache2/htdocs/
+```
+Выдает пустой каталог. Время жизни mount с типом EmptyDir совпадает
+с временем жизни пода, поэтому создается новая сущность, когда
+создается новый под
 
