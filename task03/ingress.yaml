@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-web
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /web/
+        pathType: Prefix
+        backend:
+          service:
+            name: minio-app
+            port: 
+              number: 9001
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+             name: web
+             port:
+                number: 80
+
